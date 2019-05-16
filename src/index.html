@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="app/lib/gc.spread.sheets.12.0.0.css">
+    <link rel="stylesheet" href="app/slicer.css">
+    <script src="app/lib/gc.spread.sheets.all.12.0.0.min.js"></script>
+    <script src="app/lib/gc.spread.sheets.resources.ja.12.0.0.min.js"></script>
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
@@ -20,6 +24,12 @@
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+    <div class="options-container">
+		<p class="desc">Click on the items in this slicer to filter by that class.  You can Ctrl+Left Click to select multiple items.</p>
+            <div id="row1" class="slicer"></div>
+            <div id="row2" class="slicer"></div>
+        </div>
+    <crosstab></crosstab>
+    <crosstab-grid></crosstab-grid>
   </body>
 </html>
